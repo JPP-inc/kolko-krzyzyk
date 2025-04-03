@@ -49,7 +49,7 @@ def tic_tac_toe():
         if is_draw(board):
             display_board(board)
             print("Jest remis :) ")
-            break
+            break;
         
         turn += 1
 
