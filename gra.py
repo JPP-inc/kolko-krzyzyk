@@ -37,7 +37,7 @@ def tic_tac_toe():
                     board[row][col] = player
                     break
                 else:
-                    print("To pole jest już zajęte, spróbuj ponownie.")
+                    print("To pole jest już zajęte jeszcze raz spróbuj")
             except (ValueError, IndexError):
                 print("Nieprawidłowy ruch. Podaj dwie liczby od 0 do 2.")
         
@@ -48,7 +48,7 @@ def tic_tac_toe():
         
         if is_draw(board):
             display_board(board)
-            print("Jest remis :) ")
+            print("Jest remis możecie spróbować jeszcze raz ")
             break
         
         turn += 1
