@@ -53,4 +53,6 @@ def tic_tac_toe():
         
         turn += 1
 
+if __name__ == "__main__":
+    tic_tac_toe()
 
