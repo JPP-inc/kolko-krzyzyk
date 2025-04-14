@@ -1,7 +1,7 @@
 def display_board(board):
     for row in board:
         print(" | ".join(row))
-     print("-" * 9)
+        print("-" * 9)
 
 def check_winner(board, player):
     for row in board:
@@ -43,12 +43,12 @@ def tic_tac_toe():
         
         if check_winner(board, player):
             display_board(board)
-            print(f"Gracz {player} wygrywa")
+            print(f"Gracz {player} wygrywa!")
             break
         
         if is_draw(board):
             display_board(board)
-            print("Jest remis możecie spróbować jeszcze raz ")
+            print("Remis! Zagrajcie ponownie.")
             break
         
         turn += 1
